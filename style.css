@@ -1,0 +1,153 @@
+@import url('https://fonts.google.com/specimen/Red+Hat+Display');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url('./images/bg.svg') no-repeat;
+    background-size: 100% 50%;
+    background-color: hsl(225, 100%, 94%);
+    
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 75vh;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 25px;
+}
+.img-container{
+    background: url('./images/illustration-hero.svg');
+    width: 100%;
+    height: 35%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.order-container{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+.order-container h1 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.order-container p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+.plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 15%;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 25px;
+
+}
+.annual-plan {
+    position: absolute;
+    left: 35%;
+}
+.annual-plan h3 {
+    color: hsl(223, 47%, 23%);
+}
+.annual-plan span {
+    color: hsl(224, 23%, 55%);
+}
+.attribution{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button{
+    width: 70%;
+    height: 15%;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 94%);
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+a {
+    font-weight: 600;
+}
+.cancel {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+@media (max-width: 650px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .container{
+        width: 80vw;
+        height: 75vh;
+        
+    }
+    .order-container h1{
+        font-size: 16px;
+
+    }
+    .order-container p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .attribution{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .order-container{
+        column-gap: 50px;
+    }
+    a{
+        font-size: 13px;
+    }
+    .plan{
+        font-size: 13px;
+    }
+    button{
+        font-size: 13px;
+    }
+}
+@media (min-width: 650px) and (max-width: 950px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .container{
+        width: 60vw;
+        height: 80vh;
+    }
+    .attribution{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
